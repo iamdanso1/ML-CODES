@@ -1,0 +1,20 @@
+# Core
+numpy>=1.23,<3
+pandas>=2.0
+scipy>=1.10
+openpyxl>=3.1
+
+# Models
+scikit-learn>=1.3
+xgboost>=2.0
+statsmodels>=0.14
+torch>=2.0            # LSTM; CPU wheels are fine, CUDA is used automatically if present
+
+# Figures
+matplotlib>=3.7
+
+# Notebook
+jupyterlab>=4.0
+nbformat>=5.9
+nbclient>=0.9
+ipykernel>=6.25
