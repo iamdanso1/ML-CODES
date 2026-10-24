@@ -1,0 +1,5 @@
+series,n,ADF stat,ADF p,ADF verdict,KPSS stat,KPSS p,KPSS verdict
+Price level,188,-0.30658064516116407,0.9245671310932178,unit root,1.465792821415407,0.01,non-stationary
+Log price,188,-0.429634055632444,0.905032138078327,unit root,1.5927123463595114,0.01,non-stationary
+Log return (1st difference),187,-6.386297592877226,2.160071403054886e-08,stationary,0.07663876216388193,0.1,stationary
+Seasonal difference of log,176,-2.545025650534485,0.10489979535393201,unit root,0.09857903946061282,0.1,stationary

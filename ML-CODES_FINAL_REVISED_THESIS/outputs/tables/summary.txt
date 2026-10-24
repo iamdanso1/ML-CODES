@@ -1,0 +1,26 @@
+PRIMARY SERIES : Gas Oil (mines/rig), export-quoted, converted to GHS/L
+SAMPLE         : Jan 2011 - Aug 2026 (188 months, 175 used after feature warm-up)
+HOLD-OUT       : 24 months, never trained on
+
+ONE STEP AHEAD
+  best RMSE            Random Forest    1.5144
+  best MAPE            Naive            8.87%
+  best direction       Seasonal Naive   50.0%
+  beat the random walk Random Forest, XGBoost, Ensemble
+
+ACROSS HORIZONS 1-12
+  h=1   lowest U2 SARIMA       0.945; lowest MAPE SARIMA       5.47%
+  h=3   lowest U2 Naive        1.000; lowest MAPE SARIMA       11.05%
+  h=6   lowest U2 Naive        1.000; lowest MAPE Naive        14.89%
+  h=12  lowest U2 Naive        1.000; lowest MAPE Naive        29.01%
+
+ACROSS 12 PRODUCT SERIES
+  SARIMA           won 3 series
+  Random Forest    won 7 series
+  XGBoost          won 0 series
+  LSTM             won 1 series
+  Ensemble         won 1 series
+
+SEASONALITY    : strength 0.08 - negligible; the selected SARIMA order reflects that
+STATIONARITY   : levels carry a unit root, first differences do not
+                 -> d = 1 for SARIMA; returns as the learner target

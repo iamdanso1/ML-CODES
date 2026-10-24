@@ -1,0 +1,3 @@
+date,product,field,source_value,quote,action,effect
+2014-02-01,AGO_MINES,price,0.0,Ghana pesewas/L,Excluded as invalid zero price quote,Excluded before monthly averaging; zero-valued tax/component fields are retained.
+2014-08-01,AGO_MINES_EXP,price,0.0,US cents/L,Excluded as invalid zero price quote,Excluded before monthly averaging; August 2014 converted monthly value is GHS 3.3705/L based on the positive pricing-window quote.
